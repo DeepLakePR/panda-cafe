@@ -1,0 +1,191 @@
+/***************************************/
+/* Setup */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5dc;
+    color: #4b2e2e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+}
+
+/***************************************/
+/* Header */
+header {
+    background-color: #3e2723;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/***************************************/
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.hero-text h2 {
+    color: #6d4c41;
+    font-size: 2.5em;
+}
+
+/***************************************/
+/* Create Your Own Coffee */
+.custom-coffee {
+    background-color: #f3e5ab;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-coffee h2 {
+    color: #6d4c41;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#coffee-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#coffee-form label {
+    font-size: 1.1em;
+    color: #4b2e2e;
+    margin-bottom: 5px;
+}
+
+#coffee-form select {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #6d4c41;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1em;
+    color: #4b2e2e;
+}
+
+#create-coffee {
+    background-color: #6d4c41;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#create-coffee:hover {
+    background-color: #5a3a31;
+}
+
+#coffee-result {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #6d4c41;
+    display: none;
+}
+
+#coffee-result h3 {
+    color: #6d4c41;
+    margin-bottom: 10px;
+}
+
+#coffee-result p {
+    color: #4b2e2e;
+    font-size: 1.1em;
+}
+
+/***************************************/
+/* Services */
+.services {
+    text-align: center;
+    padding: 20px;
+}
+
+.services h2 {
+    margin-bottom: 10px;
+}
+
+.services .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    color: #6d4c41;
+}
+
+/***************************************/
+/* Footer */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/***************************************/
+/* Repsonsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}

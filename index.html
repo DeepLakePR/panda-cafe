@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panda Café - Cafés Especiais com Amor</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans:wght@200;275;300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link href="public/css/home.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Panda Café</h1>
+        <p>Cafés especiais feitos com amor</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Bem-vindo ao Panda Café</h2>
+            <p>Descubra o sabor único de nossos cafés especiais, feitos com amor e dedicação. Um lugar para relaxar e
+                aproveitar cada momento.</p>
+        </div>
+        <img src="public/assets/panda.jpg" alt="Imagem de um panda com uma xícara de café">
+    </section>
+
+    <section class="custom-coffee">
+
+        <h2>Crie Seu Próprio Café</h2>
+
+        <form id="coffee-form">
+
+            <label for="bean">Escolha o Grão:</label>
+            <select id="bean" name="bean">
+
+                <option value="arabica">Arábica</option>
+                <option value="robusta">Robusta</option>
+                <option value="blend">Blend Especial</option>
+
+            </select> <!-- Grão -->
+
+            <!---->
+            <label for="method">Método de Preparo:</label>
+            <select id="method" name="method">
+
+                <option value="espresso">Espresso</option>
+                <option value="french_press">French Press</option>
+                <option value="pour_over">Pour Over</option>
+
+            </select> <!-- Preparo -->
+
+            <!---->
+            <label for="milk">Tipo de Leite:</label>
+            <select id="milk" name="milk">
+
+                <option value="none">Nenhum</option>
+                <option value="whole">Integral</option>
+                <option value="skim">Desnatado</option>
+                <option value="soy">Soja</option>
+                <option value="almond">Amêndoa</option>
+
+            </select> <!-- Leite -->
+
+            <!---->
+            <label for="flavor">Sabor Adicional:</label>
+            <select id="flavor" name="flavor">
+
+                <option value="none">Nenhum</option>
+                <option value="vanilla">Baunilha</option>
+                <option value="caramel">Caramelo</option>
+                <option value="hazelnut">Avelã</option>
+
+            </select> <!-- Flavor -->
+
+
+            <button type="button" id="create-coffee">
+                Criar Meu Café
+            </button>
+
+        </form> <!-- Form -->
+
+        <div id="coffee-result" style="display:none;">
+
+            <h3>Sua Criação:</h3>
+            <p id="result-text"></p>
+
+        </div> <!-- Coffee Result -->
+
+    </section> <!-- Create Your Own Coffee -->
+
+
+    <section class="services">
+
+        <h2>O que oferecemos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fas fa-coffee"></i>
+                <h3>Cafés Especiais</h3>
+                <p>Escolha entre uma variedade de cafés preparados com os melhores grãos.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-cookie"></i>
+                <h3>Sobremesas Artesanais</h3>
+                <p>Desfrute de doces e bolos feitos com receitas exclusivas.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-chair"></i>
+                <h3>Ambiente Aconchegante</h3>
+                <p>Um espaço perfeito para relaxar, trabalhar ou encontrar amigos.</p>
+            </div>
+
+        </div> <!-- Cards -->
+
+    </section> <!-- Services -->
+
+    <footer>
+        <p>&copy; 2025 Panda Café. Todos os direitos reservados.</p>
+    </footer> <!-- Footer -->
+
+    <!--------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/public/js/home.js"></script>
+
+</body>
+
+</html>
