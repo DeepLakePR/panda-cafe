@@ -13,6 +13,13 @@ $(document).ready(function () {
         }
         result += '.';
 
+        $('#coffee-result a').attr('href', `
+            https://api.whatsapp.com/send?phone=5541995513398&text=
+            Olá, gostaria de um café ${bean}, 
+            preparado com o método ${method}, 
+            com leite ${milk} 
+            ${flavor !== 'Nenhum' ? `e sabor de ${flavor}` : ""}`
+        );
         $('#result-text').text(result);
         $('#coffee-result').fadeIn();
 

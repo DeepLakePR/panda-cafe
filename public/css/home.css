@@ -33,6 +33,7 @@ header h1 {
 
 header p {
     margin: 5px 0 0;
+    font-size: 1.2em;
 }
 
 /***************************************/
@@ -41,8 +42,7 @@ header p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;
+    padding: 20px 5%;
 }
 
 .hero img {
@@ -52,20 +52,30 @@ header p {
 }
 
 .hero-text {
-    max-width: 500px;
-    margin: 20px;
+    max-width: 60%;
 }
 
 .hero-text h2 {
     color: #6d4c41;
-    font-size: 2.5em;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-text p{
+    font-size: 1.4rem;
+}
+
+.hero-text p a{
+    text-decoration: underline;
+    color: #6d4c41;
+    display: block;
 }
 
 /***************************************/
 /* Create Your Own Coffee */
 .custom-coffee {
     background-color: #f3e5ab;
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     border-radius: 10px;
     margin: 20px auto;
@@ -75,21 +85,23 @@ header p {
 
 .custom-coffee h2 {
     color: #6d4c41;
+    margin: 0;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
 #coffee-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 #coffee-form label {
     font-size: 1.1em;
     color: #4b2e2e;
-    margin-bottom: 5px;
+    margin: 0;
+
 }
 
 #coffee-form select {
@@ -100,17 +112,21 @@ header p {
     background-color: #fff;
     font-size: 1em;
     color: #4b2e2e;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 #create-coffee {
     background-color: #6d4c41;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 30px;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 2em;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
 }
 
 #create-coffee:hover {
@@ -129,6 +145,7 @@ header p {
 #coffee-result h3 {
     color: #6d4c41;
     margin-bottom: 10px;
+    font-size: 2em;
 }
 
 #coffee-result p {
@@ -136,15 +153,36 @@ header p {
     font-size: 1.1em;
 }
 
+#coffee-result a{
+    text-decoration: none;
+    color: #6d4c41;
+    border-radius: 4px;
+    padding: 8px 20px;
+    background-color: #5a3a31;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1.2em;
+    transition: all 0.25s ease-in-out;
+    display: block;
+}
+
+#coffee-result a:hover{
+    background-color: #3d2721;
+    color: #ccc;
+}
+
 /***************************************/
 /* Services */
 .services {
     text-align: center;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .services h2 {
     margin-bottom: 10px;
+    font-size: 3em;
 }
 
 .services .cards {
@@ -163,6 +201,12 @@ header p {
     text-align: center;
 }
 
+.card h3{
+    font-size: 2.2em;
+    margin: 0;
+    margin-top: 10px;
+}
+
 .card i {
     font-size: 50px;
     color: #6d4c41;
@@ -174,18 +218,82 @@ footer {
     background-color: #3e2723;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
+}
+
+footer .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+    font-size: 1.8em;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .social-media a:hover{
+    color: #afafaf;
+    font-size: 2.2em;
 }
 
 footer p {
     margin: 0;
 }
 
+footer p.site-developer{
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+footer p.site-developer a{
+    font-weight: 600;
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+
+footer p.site-developer a:hover{
+    color: #afafaf;
+}
+
 /***************************************/
 /* Repsonsive */
 @media (max-width: 768px) {
-    .hero {
+
+    /* Hero/Services */
+    .hero, .services .cards {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
     }
+
+    .hero-text {
+        max-width: none;
+    }
+
+    .hero-text p{
+        font-size: 1rem;
+    }
+
+    /* Create Coffee */
+    #coffee-result a{
+        font-size: 1.1em;
+    }
+
+    /* Services */
+    .services .cards{
+        padding: 0;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.9em;
+    }
+
 }
